@@ -1,0 +1,31 @@
+2022-02-11 20:23:38.194  INFO 14916 --- [restartedMain] c.i.InnovaSpringRegisterLoginApplication : Starting InnovaSpringRegisterLoginApplication using Java 11.0.12 on DESKTOP-26A522H with PID 14916 (C:\work\dev\InnovaPatikaOzanAydoganhomework4\target\classes started by ozankou in C:\work\dev\InnovaPatikaOzanAydoganhomework4)
+2022-02-11 20:23:38.196  INFO 14916 --- [restartedMain] c.i.InnovaSpringRegisterLoginApplication : No active profile set, falling back to default profiles: default
+2022-02-11 20:23:38.257  INFO 14916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-11 20:23:38.257  INFO 14916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-11 20:23:39.466  INFO 14916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-11 20:23:39.530  INFO 14916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2022-02-11 20:23:40.244  INFO 14916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-11 20:23:40.256  INFO 14916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-11 20:23:40.257  INFO 14916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-11 20:23:40.384  INFO 14916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-11 20:23:40.384  INFO 14916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2126 ms
+2022-02-11 20:23:40.692  INFO 14916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-11 20:23:40.790  INFO 14916 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-11 20:23:40.972  INFO 14916 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-11 20:23:41.101  INFO 14916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-11 20:23:41.550  INFO 14916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-11 20:23:41.568  INFO 14916 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-02-11 20:23:42.294  INFO 14916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-11 20:23:42.323  INFO 14916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-11 20:23:42.648  WARN 14916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-11 20:23:42.880  INFO 14916 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-11 20:23:43.238  INFO 14916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-11 20:23:43.244  INFO 14916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-11 20:23:43.308  INFO 14916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-11 20:23:43.327  INFO 14916 --- [restartedMain] c.i.InnovaSpringRegisterLoginApplication : Started InnovaSpringRegisterLoginApplication in 5.732 seconds (JVM running for 7.619)
+2022-02-11 20:23:44.216  INFO 14916 --- [RMI TCP Connection(3)-192.168.1.43] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-11 20:23:44.217  INFO 14916 --- [RMI TCP Connection(3)-192.168.1.43] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-11 20:23:44.219  INFO 14916 --- [RMI TCP Connection(3)-192.168.1.43] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-11 20:24:44.625  INFO 14916 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-11 20:24:44.630  INFO 14916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-11 20:24:44.646  INFO 14916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

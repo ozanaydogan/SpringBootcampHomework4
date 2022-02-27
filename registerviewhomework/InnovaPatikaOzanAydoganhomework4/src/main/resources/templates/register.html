@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Thymeleaf -2 </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>Sylvanasla birlikte Savaşmak için kayıt ol</h1>
+
+	<div class="login-form">
+
+		<form id="registerForm" autocomplete="off" th:method="post" th:action="@{/WoW/register}" th:object="${register_form}">
+			<p>Kullanıcı Adı</p>
+			<input th:field="*{userName}" type="text" class="form-control" placeholder="Kullanıcı adı" autofocus>
+			<div th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}"></div>
+			<p>E-mail</p>
+			<input th:field="*{userEmail}" type="text" class="form-control" placeholder="E-mail" autofocus>
+			<div th:if="${#fields.hasErrors('userEmail')}" th:errors="*{userEmail}"></div>
+			<p>Şifre</p>
+			<input th:field="*{userPassword}" type="password" class="form-control" placeholder="Şifre" autofocus>
+			<div th:if="${#fields.hasErrors('userPassword')}" th:errors="*{userPassword}"></div>
+			<p>Tarafını Seç!</p>
+			<select th:field="*{userRace}"th:required="required">
+				<option value="">Tarafını seç!</option>
+				<option value="ALLIANCE">FOR THE ALLIANCE</option>
+				<option value="HORDE">FOR THE HORDE</option>
+			</select>
+			<div th:if="${#fields.hasErrors('userRace')}" th:errors="*{userRace}"></div>
+			<button  id="registerButton" >
+				sign-up
+			</button>
+		</form>
+
+		<p>
+			<span style="color: aqua">Zaten Hesabın var mı ? o zaman sylvanasın yanına koş!</span>
+			<button style="color: red" onclick="forwardLogin();" class="pointer">Sylvanasın yanına koş!
+			</button>
+		</p>
+
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script th:src="@{/js/script.js}"></script>
+<script>
+	function forwardLogin()
+	{
+		window.location.href="/WoW/login";
+	}
+</script>
+
+</body>
+</html>

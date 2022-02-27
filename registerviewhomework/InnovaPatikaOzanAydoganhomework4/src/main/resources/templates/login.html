@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Thymeleaf -2 </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+	<link th:href="@{/css/style1.css}" rel="stylesheet">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 style="color: indigo">Giriş yap ve Savaşa başla!</h1>
+
+<div class="login-form">
+
+	<form id="loginForm" autocomplete="off" th:method="post" th:action="@{/WoW/login}" th:object="${login_form}">
+
+		<p>Kullanıcı Adı</p>
+		<input th:field="*{userName}" type="text" class="form-control" placeholder="Kullanıcı adı" autofocus>
+		<div th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}"></div>
+		<p>Şifre</p>
+		<input th:field="*{userPassword}" type="password" class="form-control" placeholder="Şifre" autofocus>
+		<div th:if="${#fields.hasErrors('userPassword')}" th:errors="*{userPassword}"></div>
+		<!--						<input type="submit" class="btn btn-primary" value="Sign in">-->
+		<button id="loginButton" >
+			sign-in
+		</button>
+	</form>
+
+	<p style="color: deepskyblue">
+		Kaydın yoksa
+	</p>
+	<p>
+		<button style="color: red" onclick="forwardRegister();" class="pointer">Kayıt ol ve Sylvanasın yanına koş!
+		</button>
+	</p>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script th:src="@{/js/script.js}"></script>
+<script>
+	function forwardRegister()
+	{
+		window.location.href="/WoW/register";
+	}
+</script>
+</body>
+</html>
